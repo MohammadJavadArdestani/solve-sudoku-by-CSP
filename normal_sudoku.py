@@ -6,29 +6,19 @@ n = 0
 
 
 class Cell:
-    def __init__(self,x,y,string):
+    def __init__(self,x,y,number):
         self.x = x
         self.y = y
-        coler = string[-1]
-        string = string[:-1]
+        
         self.isComplete = False
-        if string != '*':
+        if number != '*' :
             self.isComplete = True
-            string = int(string)
-        self.coler = coler
-        self.number = string
+            number = int(number)
+        self.number = number
         self.num_mrv = [x for x in range(1,n+1)]
-
-    def __str__(self):
-        return "[{}{}],{}{}".format(self.x,self.y ,self.number, self.coler)
-    
     def __repr__(self):  
         return "{}".format(self.number) 
 
-    def __eq__(self, other):
-        if not isinstance(other, Cell):
-            return NotImplemented
-        return self.number == other.number and self.coler == other.coler
 
 
 def get_input():
@@ -82,7 +72,7 @@ def print_mrv():
 
 
 def choose_cell():
-    min_mrv_cell = Cell(-1,-1,"*#")
+    min_mrv_cell = Cell(-1,-1,"*")
     min_mrv_cell.num_mrv=[x for x in range(n+1)]
     for i in range(n):
         for j in range(n):
