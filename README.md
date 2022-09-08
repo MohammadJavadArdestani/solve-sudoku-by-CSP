@@ -1,4 +1,4 @@
-# solve sudoku by CSP
+# solve sudoku as a Constraint Satisfaction Problem
  Here we have two kinds of sudoku puzzles first one is just a numeric n*n table, and the other one contains colored cells. <br>
  We solve tables as a CSP problem using the Backtrack algorithm with forward-checking and MRV and Degree heuristics. <br>
 
