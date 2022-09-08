@@ -7,8 +7,8 @@
 There is just one rule here: Each number should be unique in its row and column.
 
 ### Input:
-In the first-line enter n(dimension of table) </br>
-In the next n line put each num value in a row(you can put * for free cell)
+In the first-line enter n(dimension of table). </br>
+In the next n line put each num value in a row(you can put * for free cell).
 
 #### Example: 
 7 </br>
@@ -35,7 +35,7 @@ In the next n line put each num value in a row(you can put * for free cell)
 
 ## Colored Sudoku
 1- Each number should be unique in its row and column.<br>
-2- Each cell must contain a color s.t for every two adjacent cells. If a cell has a greater number, then its color should have more priority over that adjacent
+2- Each cell must contain a color s.t for every two adjacent cells. If a cell has a greater number, then its color should have more priority over that adjacent.
 
 ### Input:
 In the first line, enter m, n(number of colors and dimension of the table).<br>
