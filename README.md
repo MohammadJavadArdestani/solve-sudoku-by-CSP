@@ -1,14 +1,14 @@
 # solve sudoku by CSP
- here we have two kinds of sudoku puzzle first one is just a numeric n*n table and the other one contains colored cell <br>
- we slove tables as a CSP problem using Backtrack algorithm with forward Checking and MRV and Degree heuristics.<br>
+ Here we have two kinds of sudoku puzzles first one is just a numeric n*n table, and the other one contains colored cells. <br>
+ We solve tables as a CSP problem using the Backtrack algorithm with forward-checking and MRV and Degree heuristics. <br>
 
 
 ## normal sudoku
-there is just one rule here: Each number should be unique in its row and column.
+There is just one rule here: Each number should be unique in its row and column.
 
 ### input:
-in the first-line enter n(dimension of table) </br>
-in the next n line put each num value in a row(you can put * for free cell)
+In the first-line enter n(dimension of table) </br>
+In the next n line put each num value in a row(you can put * for free cell)
 
 #### example: 
 7 </br>
@@ -35,12 +35,12 @@ in the next n line put each num value in a row(you can put * for free cell)
 
 ## colored sudoku
 1- Each number should be unique in its row and column.<br>
-2- each cell must contain a color s.t for every two adjacent cells if a cell has a greater number, then its color should have more priority over that adjacent
+2- Each cell must contain a color s.t for every two adjacent cells. If a cell has a greater number, then its color should have more priority over that adjacent
 
 ### input:
-in the first-line enter m, n(number of colors and dimension of table)</br>
-the second line contains m colors from high priority to low </br>
-in the next n line put each cell num and color in a row(you can put * for free cell, and # for colorless cell).</br>
+In the first line, enter m, n(number of colors and dimension of the table).<br>
+The second line contains m colors from high priority to low.<br>
+In the next n line put each cell num and color in a row (you can put * for free cell, and # for colorless cell).<br>
 
 #### example: </br>
 6 5</br>
